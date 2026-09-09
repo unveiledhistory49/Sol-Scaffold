@@ -1,13 +1,29 @@
-# Node.js
+# Dependencies
 node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
 dist/
+build/
+*.tsbuildinfo
+
+# Testing / coverage
+coverage/
+.nyc_output/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-
-# Testing
-coverage/
 
 # OS
 .DS_Store
@@ -17,13 +33,22 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+*.swo
 
-# Project specific
+# Packaging
 *.tgz
-.gemini/
+*.tar.gz
+
+# Dev tracking docs (do not commit planning notes)
 ACT.md
 TODO.md
 PLAN.md
 ROADMAP.md
 RESEARCH.md
 TEST.md
+GEMINI.md
+GOVERNANCE_PLAN.md
+
+# Misc
+.gemini/
+.cache/
